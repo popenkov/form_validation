@@ -34,6 +34,7 @@ $('form').validate({
   errorPlacement: function(error, element) {
     $(element).parent().append(error);
   },
+  errorElement: 'span',
   highlight: function(element, errorClass) {
     $(element).parent().addClass(errorClass);
   },
