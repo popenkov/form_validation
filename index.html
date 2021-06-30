@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <!-- библиотеки -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.js" defer></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+
+
+
+</head>
+<body>
+
+
+
+    <form action="">
+        <label>
+          <span>Имя</span>
+          <input type="text" name="name" class="js-input-name" required />
+        </label>
+        <label>
+          <span>Фамилия</span>
+          <input type="text" name="lastname" class="js-input-name" required  />
+        </label>
+        <label>
+          <span>E-mail</span>
+          <input type="email" name="emailfield" required  />
+        </label>
+        <label>
+          <span>Phone</span>
+          <input type="text" name="phone" class="js-input-phone" placeholder="+7 (___) ___-__-__" required  />
+        </label>
+        <label>
+          <span>Пароль 1</span>
+          <input type="password" minlength="8" id="pswd1" name="password1" required  />
+        </label>
+        <label>
+          <span>Пароль 2</span>
+          <input type="password" equalTo="#pswd1" name="password2" required  />
+        </label>
+        <label>
+          <input type="checkbox" name="agree" required  />
+          <span>Разрешаю продать свои данные</span>
+        </label>
+        
+        <div>
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    
+
+
+    
+</body>
+</html>
